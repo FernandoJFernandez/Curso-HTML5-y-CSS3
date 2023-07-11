@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso HTML5 & CSS3 - Fernando Fernández</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/scrollomatic.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/prefixfree.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("a.scroll").scrollomatic();
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a href="#home" class="scroll">
+            <div id="logo"></div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#home" class="scroll">Home</a></li>
+                <li><a href="#temas" class="scroll">Temas</a></li>
+                <li><a href="#galeria" class="scroll">Galería</a></li>
+                <li><a href="#contacto" class="scroll">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenido">
+        <video muted autoplay loop preload="auto">
+            <source src="video/video.mp4" type="video/mp4">
+            <source src="video/video.ogv" type="video/ogv">
+            <source src="video/video.webm" type="video/webm">
+            <p>Su navegador no soporta el elemento vídeo</p>
+        </video>
+        <section id="home">
+            <div id="globo"></div>
+            <h2>Bienvenido al curso de <span>>HTML5 & CSS3</span></h2>
+            <p>Texto simulado a nivel de texto descriptivo texto simulado a nivel de texto descriptivo texto simulado a nivel de texto descriptivo texto simulado a nivel de texto descriptivo texto simulado a nivel de texto descriptivo texto simulado a nivel de texto descriptivo.</p>
+            <a href="#temas">Conozca más</a>
+            <div id="abajo"></div>
+        </section>
+        <section id="temas">
+            <h3>Temas</h3>
+            <article>
+                <div id="imagen1"></div>
+                <h4>Subtítulo nivel 4</h4>
+                <p>Texto simulado a nivel de texto descriptivo texto simulado a nivel de texto descriptivo texto simulado</p>
+                <a href="#">Leer más</a>
+                <div id="imagen2"></div>
+                <h4>Subtítulo nivel 4</h4>
+                <p>Texto simulado a nivel de texto descriptivo texto simulado a nivel de texto descriptivo texto simulado</p>
+                <a href="#">Leer más</a>
+                <div id="imagen3"></div>
+                <h4>Subtítulo nivel 4</h4>
+                <p>Texto simulado a nivel de texto descriptivo texto simulado a nivel de texto descriptivo texto simulado</p>
+                <a href="#">Leer más</a>
+            </article>
+        </section>
+        <section id="galeria">
+            <h3>Galería</h3>
+            <div id="fotos">
+                <a href="#" title="Images1"><img src="img/1.jpg" alt="Imagen1"></a>
+                <a href="#" title="Images2"><img src="img/2.jpg" alt="Imagen2"></a>
+                <a href="#" title="Images3"><img src="img/3.jpg" alt="Imagen3"></a>
+                <a href="#" title="Images4"><img src="img/4.jpg" alt="Imagen4"></a>
+                <a href="#" title="Images5"><img src="img/5.jpg" alt="Imagen5"></a>
+                <a href="#" title="Images6"><img src="img/6.jpg" alt="Imagen6"></a>
+                <a href="#" title="Images7"><img src="img/7.jpg" alt="Imagen7"></a>
+                <a href="#" title="Images8"><img src="img/8.jpg" alt="Imagen8"></a>
+                <a href="#" title="Images9"><img src="img/9.jpg" alt="Imagen9"></a>
+            </div>
+        </section>
+        <section id="contacto">
+            <h3>Contáctanos</h3>
+            <div id="formulario">
+                <form action="" method="post">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="telefono" placeholder="Teléfono" pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{4}$" title="Debe ser un número de 3 dígitos seguido de espacio, a continuación otro número de 3 dígitos seguido de espacio y que termine con 4 números ej: xxx xxx xxxx" required>
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <input type="submit" value="Enviar datos">
+                </form>
+            </div>
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d173303.70717338202!2d-16.7652833747024!3d28.338479445228508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1681377574640!5m2!1ses!2ses" width="400" height="300"></iframe>
+            </div>
+            <a href="#contenido" class="arriba scroll"></a>
+        </section>
+        <footer>
+            <p>copyright &copy; 2023 Fernando Fernández - Todos los derechos reservados</p>
+        </footer>
+    </main>
+</body>
+</html>
